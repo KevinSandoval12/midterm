@@ -1,0 +1,42 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(32, 32, 211);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  color: rgb(54, 59, 183);
+  background-color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  font-size: 1rem;
+  font-weight: 550;
+  color: rgb(84, 84, 84);
+}
+
+select {
+  border: none;
+  font-size: 1rem;
+  font-weight: 550;
+  color: rgb(84, 84, 84);
+}
+
+img {
+  filter: brightness(0.3);
+  border-radius: 2rem 2rem 0 0;
+  background: black;
+}
+
+header {
+  color: white;
+}
+
+.error {
+  color: red;
+  display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Booking Form</title>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img src="https://bit.ly/305-vacation" alt="" />
+          <h1>Book Your Dream Vacation</h1>
+        </div>
+      </header>
+      <form action="">
+        <div id="spacing">
+          <div id="des-container">
+            <p class="title">Destination</p>
+            <select name="destination" id="destination">
+              <option value="none">Choose a destination...</option>
+              <option value="indonesia">Bali, Indonesia</option>
+              <option value="france">Paris, France</option>
+              <option value="japan">Tokyo, Japan</option>
+              <option value="maldives">Maldives</option>
+              <option value="new-york">New York City, USA</option>
+            </select>
+          </div>
+          <div class="row-container">
+            <p class="title">Departure Date</p>
+            <p class="title">Number of Travlers</p>
+
+            <input type="date" />
+            <input type="number" placeholder="0" />
+          </div>
+        </div>
+        <button type="submit">Find My Vacation</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
