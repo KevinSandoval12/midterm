@@ -25,12 +25,13 @@ img {
 
 h1 {
   position: absolute;
-  top: 7%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-p {
+h2 {
+  text-align: center;
 }
 
 button {
@@ -55,11 +56,60 @@ button {
 .row-container {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
-  gap: 3rem;
+  gap: 1rem 10rem;
   grid-template-rows: 0;
   margin-top: 1rem;
 }
 
 #spacing {
   padding: 2rem 2rem;
+}
+
+#extended {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 96vh;
+}
+
+/* Tablets */
+@media (max-width: 1300px) {
+  main {
+    width: 70%;
+  }
+
+  .row-container {
+    gap: 1rem 3rem;
+  }
+
+  button {
+    padding: 1rem 5rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+
+  .row-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .des-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  img {
+    height: 8rem;
+  }
 }

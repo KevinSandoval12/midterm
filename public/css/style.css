@@ -40,3 +40,8 @@ header {
   color: red;
   display: none;
 }
+
+footer {
+  color: white;
+  text-align: center;
+}

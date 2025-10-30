@@ -6,41 +6,53 @@
     <title>Vacation Booking Form</title>
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/img/plane.png" />
 
     <script src="/js/script.js" defer></script>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
-          <img src="https://bit.ly/305-vacation" alt="" />
-          <h1>Book Your Dream Vacation</h1>
-        </div>
-      </header>
-      <form action="">
-        <div id="spacing">
-          <div id="des-container">
-            <p class="title">Destination</p>
-            <select name="destination" id="destination">
-              <option value="none">Choose a destination...</option>
-              <option value="indonesia">Bali, Indonesia</option>
-              <option value="france">Paris, France</option>
-              <option value="japan">Tokyo, Japan</option>
-              <option value="maldives">Maldives</option>
-              <option value="new-york">New York City, USA</option>
-            </select>
+    <div id="extended">
+      <main>
+        <header>
+          <div>
+            <img src="https://bit.ly/305-vacation" alt="" />
+            <h1>Book Your Dream Vacation</h1>
           </div>
-          <div class="row-container">
-            <p class="title">Departure Date</p>
-            <p class="title">Number of Travlers</p>
+        </header>
+        <form id="form" action="submit-button" method="post">
+          <div id="spacing">
+            <div id="des-container">
+              <p class="title">Destination</p>
+              <select name="destination" id="destination">
+                <option value="none">Choose a destination...</option>
+                <option value="indonesia">Bali, Indonesia</option>
+                <option value="france">Paris, France</option>
+                <option value="japan">Tokyo, Japan</option>
+                <option value="maldives">Maldives</option>
+                <option value="new-york">New York City, USA</option>
+              </select>
+              <span class="error" id="desErr"
+                >You must choose a Destination</span
+              >
+            </div>
+            <div class="row-container">
+              <p class="title">Departure Date</p>
+              <p class="title">Number of Travlers</p>
 
-            <input type="date" />
-            <input type="number" placeholder="0" />
+              <input type="date" id="date" />
+              <input type="number" id="travelNum" placeholder="0" />
+              <span class="error" id="dateErr">You must choose a Date</span>
+              <span class="error" id="travlerErr"
+                >You must choose the number of Travlers</span
+              >
+            </div>
           </div>
-        </div>
-        <button type="submit">Find My Vacation</button>
-      </form>
-    </main>
-    <footer></footer>
+          <button type="submit" id="submit">Find My Vacation</button>
+        </form>
+      </main>
+    </div>
+    <footer>
+      GitHub Repository: https://github.com/KevinSandoval12/midterm
+    </footer>
   </body>
 </html>

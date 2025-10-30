@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+app.post("/submit-button", (req, res) => {
+  res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
+});
+
 // Start the server and make it listen on the port
 // specified above
 app.listen(PORT, () => {
